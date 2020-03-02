@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-family: Arial;
+    background-color: rgb(255, 255, 255);
+}
+
+.l {
+    float: left;
+}
+
+.r {
+    float: right;
+}
+
+.class:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wy {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#kuang {
+    background-color: white;
+    box-shadow: 0px 3px 3px #c7c7c7;
+    z-index: 20;
+    width: 100%;
+    height: 64px;
+}
+
+#head {
+    height: 64px;
+}
+
+#head .head_logo {
+    margin-top: 10px;
+    color: aqua
+}
+
+#head .head_menu {
+    font-size: 20px;
+    height: 64px;
+    margin-top: 17px;
+}
+
+#head .head_menu li {
+    float: left;
+    margin-left: 50px;
+    color: white;
+}
+
+#head .noactive a {
+    color: #888888;
+    height: 60px;
+}
+
+#head .noactive :hover {
+    color: turquoise;
+}
+
+#head .active {
+    height: 30px;
+    color: aqua;
+    border-bottom: 5px double aqua;
+}
+
+#head .active a {
+    color: aqua;
+    font-weight: 600;
+}
+
+#head .more {
+    position: absolute;
+    top: 64px;
+    display: none;
+    z-index: 2;
+}
+
+#head .more:hover {
+    display: block;
+}
+
+#head .more ul {
+    width: auto;
+    padding: 6px 0;
+    text-align: left;
+    background: #fff;
+    box-shadow: 0 2px 8px 0 #888888;
+    border-radius: 0 0 4px 4px;
+}
+
+#head .more li {
+    float: none;
+    white-space: nowrap;
+}
+
+#head .more li a {
+    font-size: 10px;
+    color: #000;
+}
+
+#head .more ul {
+    margin: 0 auto;
+}
+
+#kk {
+    width: 1080px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    margin: 30px auto;
+    box-shadow: 0 0 8px #bcbcbc;
+    padding: 20px;
+}
+
+#kk ul {
+    height: 240px;
+}
+
+#kk li {
+    float: left;
+    width: 230px;
+    height: 240px;
+    margin-right: 10px;
+    text-align: center;
+    box-shadow: 0 0 3px #888888;
+}
+
+#kk li img {
+    width: 200px;
+    height: 170px;
+    margin: 0 auto;
+}
+
+#kk li a {
+    font-size: larger;
+    font-weight: 600;
+    color: #6e6e6e;
+}
+
+#nrk {
+    width: 1000px;
+    height: 380px;
+    margin-top: 50px;
+}
+
+#nrk .nr {
+    width: 100px;
+    margin: 0 auto;
+    font-size: 25px;
+    margin-bottom: 30px;
+    padding: 2px 10px;
+    border: 1px dashed;
+}
+
+#nrk .pa {
+    font-size: 15px;
+    color: #444444;
+    margin-top: 5px;
+}
+
+#nrk .zpk {
+    width: 1000px;
+    height: 310px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#nrk .zp {
+    width: 220px;
+    height: 290px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    box-shadow: 0 0 3px #888888;
+}
+
+#nrk .zp_fm {
+    display: inline-block;
+    width: 100%;
+    height: 190px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+#nrk .zp_fm:hover {
+    opacity: 1;
+}
+
+#nrk .lx {
+    height: 1px;
+    background: rgba(0, 0, 0, .1);
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#nrk .zp_js {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#nrk .zp_js p {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5px;
+    font-size: 20px;
+    color: #1f1f1f;
+    margin-bottom: 10px;
+}
+
+#nrk .zp_js a {
+    width: 90%;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #444444;
+}
+
+#nrk .zp_js a:hover {
+    color: #8dd5db;
+}
+
+#db {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 58px;
+    padding-bottom: 40px;
+    box-shadow: 0 -1px 2px #bcbcbc;
+    background: center;
+    background-color: #fcfcfc;
+    position: relative;
+}
+
+#db .k {
+    width: 800px;
+    margin-left: 200px;
+}
+
+#db .left {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin-left: 50px;
+}
+
+#db .left_p {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#db .left a {
+    color: #4e4e4e;
+    font-size: 15px;
+}
+
+#db .left a:hover {
+    color: #8dd5db;
+}
+
+#db .lx {
+    width: 1px;
+    background: rgba(0, 0, 0, .1);
+    height: 180px;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+#db .qqa {
+    margin-top: 5px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+#db .qqa:hover {
+    box-shadow: 0px 0px 5px #888888;
+}
+
+.tx {
+    border-radius: 50%;
+    vertical-align: middle;
+}
