@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-family: Arial;
+    background-color: rgb(255, 255, 255);
+}
+
+.l {
+    float: left;
+}
+
+.r {
+    float: right;
+}
+
+.class:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wy {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#kuang {
+    background-color: white;
+    box-shadow: 0px 3px 3px #c7c7c7;
+    z-index: 20;
+    width: 100%;
+    height: 64px;
+}
+
+#head {
+    height: 64px;
+}
+
+#head .head_logo {
+    margin-top: 10px;
+    color: aqua
+}
+
+#head .head_menu {
+    font-size: 20px;
+    height: 64px;
+    margin-top: 17px;
+}
+
+#head .head_menu li {
+    float: left;
+    margin-left: 50px;
+    color: white;
+}
+
+#head .noactive a {
+    color: #888888;
+}
+
+#head .noactive :hover {
+    color: turquoise;
+}
+
+#head .active {
+    width: 50px;
+    height: 45px;
+    color: aqua;
+    text-align: center;
+    border-bottom: 2px solid aqua;
+}
+
+#head .active a {
+    color: aqua;
+    font-weight: 600;
+}
+
+#kk {
+    width: 1080px;
+    background-color: rgb(255, 255, 255);
+    margin: 40px auto;
+    box-shadow: 0 0 8px #bcbcbc;
+    padding: 20px;
+}
+
+#kk h1 {
+    color: aqua;
+    font-size: 20px;
+}
+
+#kk p {
+    font-size: 18px;
+    margin: 10px;
+}
+
+#nrk {
+    width: 1080px;
+}
+
+#nrk .pa {
+    font-size: 25px;
+    color: #00ffff;
+    text-shadow: 1px 3px 4px #00aaaa;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#nrk .zpk {
+    padding: 30px;
+    height: 270px;
+}
+
+#nrk .zp {
+    margin-left: 5px;
+    margin-right: 10px;
+    height: 250px;
+    width: 180px;
+    background: #fff;
+    border-radius: 10px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    transition: 0.4s;
+    border: 2px #505050 solid;
+}
+
+#nrk .zp:hover {
+    box-shadow: 0 0 10px #000000;
+}
+
+#nrk .zp_fm {
+    display: inline-block;
+    width: 100%;
+    height: 170px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px 10px 0 0;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+#nrk .zp_fm:hover {
+    opacity: 1;
+}
+
+#nrk .zp_bt {
+    margin-left: 5px;
+    color: #2b2b2b;
+    font-size: 18px;
+}
+
+#nrk .zp_js {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#nrk .zp_js a {
+    width: 90%;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #444444;
+}
+
+#nrk .zp_js a:hover {
+    color: #8dd5db;
+}
+
+#db {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 58px;
+    padding-bottom: 40px;
+    box-shadow: 0 -1px 2px #bcbcbc;
+    background: center;
+    background-color: #fcfcfc;
+    position: relative;
+}
+
+#db .k {
+    width: 800px;
+    margin-left: 200px;
+}
+
+#db .left {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin-left: 50px;
+}
+
+#db .left_p {
+    color: #000000;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#db .left a {
+    color: #4e4e4e;
+    font-size: 15px;
+}
+
+#db .left a:hover {
+    color: #8dd5db;
+}
+
+#db .lx {
+    width: 1px;
+    background: rgba(0, 0, 0, .1);
+    height: 180px;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+#db .qqa {
+    margin-top: 5px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+#db .qqa:hover {
+    box-shadow: 0px 0px 5px #888888;
+}
+
+.tx {
+    float: left;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    vertical-align: text-top;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* 下拉菜单 */
+
+.dropbtn {
+    background-color: rgb(255, 255, 255);
+    color: #888888;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    font-size: smaller;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.lx {
+    height: 1px;
+    background: rgba(0, 0, 0, .1);
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.ava {
+    color: rgb(56, 56, 56);
+    transition: 1s;
+}
+
+.ava:hover {
+    color: #00ffff;
+    text-decoration: underline;
+}
