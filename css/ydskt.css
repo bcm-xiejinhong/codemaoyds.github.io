@@ -1,8 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-weight: 500;
-    transition: 0.3s;
 }
 
 ul,
@@ -71,7 +69,6 @@ body {
 
 #head .noactive a {
     color: #888888;
-    height: 60px;
 }
 
 #head .noactive :hover {
@@ -79,9 +76,11 @@ body {
 }
 
 #head .active {
-    height: 30px;
+    width: 50px;
+    height: 45px;
     color: aqua;
-    border-bottom: 5px double aqua;
+    text-align: center;
+    border-bottom: 2px solid aqua;
 }
 
 #head .active a {
@@ -89,147 +88,83 @@ body {
     font-weight: 600;
 }
 
-#head .more {
-    position: absolute;
-    top: 64px;
-    display: none;
-    z-index: 2;
-}
-
-#head .more:hover {
-    display: block;
-}
-
-#head .more ul {
-    width: auto;
-    padding: 6px 0;
-    text-align: left;
-    background: #fff;
-    box-shadow: 0 2px 8px 0 #888888;
-    border-radius: 0 0 4px 4px;
-}
-
-#head .more li {
-    float: none;
-    white-space: nowrap;
-}
-
-#head .more li a {
-    font-size: 10px;
-    color: #000;
-}
-
-#head .more ul {
-    margin: 0 auto;
-}
-
 #kk {
     width: 1080px;
     background-color: rgb(255, 255, 255);
-    position: relative;
-    margin: 30px auto;
+    margin: 40px auto;
     box-shadow: 0 0 8px #bcbcbc;
     padding: 20px;
 }
 
-#kk ul {
-    height: 240px;
+#kk h1 {
+    color: aqua;
+    font-size: 20px;
 }
 
-#kk li {
-    float: left;
-    width: 230px;
-    height: 240px;
-    margin-right: 10px;
-    text-align: center;
-    box-shadow: 0 0 3px #888888;
-}
-
-#kk li img {
-    width: 200px;
-    height: 170px;
-    margin: 0 auto;
-}
-
-#kk li a {
-    font-size: larger;
-    font-weight: 600;
-    color: #6e6e6e;
+#kk p {
+    font-size: 18px;
+    margin: 10px;
 }
 
 #nrk {
-    width: 1000px;
-    height: 380px;
-    margin-top: 50px;
-}
-
-#nrk .nr {
-    width: 100px;
-    margin: 0 auto;
-    font-size: 25px;
-    margin-bottom: 30px;
-    padding: 2px 10px;
-    border: 1px dashed;
+    width: 1080px;
 }
 
 #nrk .pa {
-    font-size: 15px;
-    color: #444444;
+    font-size: 25px;
+    color: #00ffff;
+    text-shadow: 1px 3px 4px #00aaaa;
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 #nrk .zpk {
-    width: 1000px;
-    height: 310px;
-    margin: 0 auto;
-    position: relative;
+    padding: 30px;
+    height: 270px;
 }
 
 #nrk .zp {
-    width: 220px;
-    height: 290px;
-    background-color: #ffffff;
+    margin-left: 5px;
+    margin-right: 10px;
+    height: 250px;
+    width: 180px;
+    background: #fff;
     border-radius: 10px;
+    display: block;
+    overflow: hidden;
     float: left;
-    margin-right: 15px;
-    margin-left: 15px;
-    box-shadow: 0 0 3px #888888;
+    transition: 0.4s;
+    border: 2px #505050 solid;
+}
+
+#nrk .zp:hover {
+    box-shadow: 0 0 10px #000000;
 }
 
 #nrk .zp_fm {
     display: inline-block;
     width: 100%;
-    height: 190px;
+    height: 170px;
     background-size: cover;
     background-position: center;
-    border-radius: 5px;
-    opacity: 0.7;
+    border-radius: 10px 10px 0 0;
+    opacity: 0.8;
+    transition: 0.4s;
 }
 
 #nrk .zp_fm:hover {
     opacity: 1;
 }
 
-#nrk .lx {
-    height: 1px;
-    background: rgba(0, 0, 0, .1);
-    width: 100%;
-    display: inline-block;
-    margin-bottom: 10px;
+#nrk .zp_bt {
+    margin-left: 5px;
+    color: #2b2b2b;
+    font-size: 18px;
 }
 
 #nrk .zp_js {
     width: 100%;
     margin: 0 auto;
-}
-
-#nrk .zp_js p {
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 5px;
-    font-size: 20px;
-    color: #1f1f1f;
-    margin-bottom: 10px;
 }
 
 #nrk .zp_js a {
@@ -300,6 +235,74 @@ body {
 }
 
 .tx {
+    float: left;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
-    vertical-align: middle;
+    vertical-align: text-top;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+/* 下拉菜单 */
+
+.dropbtn {
+    background-color: rgb(255, 255, 255);
+    color: #888888;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    font-size: smaller;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.lx {
+    height: 1px;
+    background: rgba(0, 0, 0, .1);
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.ava {
+    color: rgb(56, 56, 56);
+    transition: 1s;
+}
+
+.ava:hover {
+    color: #00ffff;
+    text-decoration: underline;
 }
