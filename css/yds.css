@@ -58,12 +58,12 @@ body {
 #head .head_menu {
     font-size: 20px;
     height: 64px;
-    margin-top: 17px;
 }
 
 #head .head_menu li {
+    padding: 18.5px;
     float: left;
-    margin-left: 50px;
+    margin-left: 30px;
     color: white;
 }
 
@@ -76,14 +76,12 @@ body {
 }
 
 #head .active {
-    height: 45px;
-    color: aqua;
-    text-align: center;
-    border-bottom: 2px solid aqua;
+    background-color: #f0f0f0;
 }
 
 #head .active a {
     color: aqua;
+    text-shadow: 1px 2px 4px #e7e7e7;
     font-weight: 600;
 }
 
