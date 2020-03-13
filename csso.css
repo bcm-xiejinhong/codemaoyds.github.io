@@ -46,11 +46,12 @@ html {
 }
 
 .as {
-    width: 200px;
+    width: 180px;
     color: #fff;
     text-align: center;
-    line-height: 50px;
+    line-height: 30px;
     border-radius: 10px;
     background-color: #fec433;
     box-shadow: 0 0 5px #888888;
+    margin: auto;
 }
