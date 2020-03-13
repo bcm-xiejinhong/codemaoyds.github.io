@@ -1,5 +1,6 @@
-body {
-    background-color: #252525;
+body,
+html {
+    background-color: #255252;
 }
 
 .c-navigator--navigator {
@@ -7,6 +8,10 @@ body {
 }
 
 .c-navigator--header-content .c-navigator--nav_wrap .c-navigator--item:hover {
+    background-color: #00caca;
+}
+
+.c-navigator--header-content .c-navigator--user_wrap .c-navigator--message_wrap:hover {
     background-color: #00caca;
 }
 
@@ -19,36 +24,11 @@ body {
 }
 
 .r-work--info_container .r-work--focus_btn {
-    position: absolute;
-    right: 15px;
-    top: 12px;
     background: #00ffff;
-    border-radius: 4px;
-    width: 62px;
-    height: 28px;
-    line-height: 28px;
-    text-align: center;
-    cursor: pointer;
-    margin-left: 118px;
-    margin-top: 2px;
-    font-size: 14px;
-    color: #fff;
-    letter-spacing: 0;
 }
 
 .c-comment--comment_sender .c-comment--comment_btn {
-    position: absolute;
-    width: 80px;
-    height: 80px;
     background: #00ffff;
-    font-size: 14px;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    right: 0;
-    top: 0;
-    border-radius: 4px;
-    cursor: pointer;
 }
 
 .c-comment--comment_sender .c-comment--comment_btn:hover {
@@ -58,4 +38,9 @@ body {
 .c-pagination--btn.c-pagination--page-container .c-pagination--activePage {
     background-color: #00ffff;
     border-color: #252525;
+}
+
+.r-work--info_container .r-work--account_name {
+    color: #00ffff;
+    text-shadow: 1px 3px 5px #00ffff;
 }
